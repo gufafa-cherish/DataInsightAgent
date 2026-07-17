@@ -1,0 +1,27 @@
+{
+  "analysis_type": "ab_test",
+  "source_file": "data\\ab_data.csv",
+  "metrics": {
+    "raw_rows": 294478,
+    "invalid_value_rows": 0,
+    "mismatch_rows": 3893,
+    "duplicate_rows_removed": 1,
+    "clean_rows": 290584,
+    "control_rate": 0.1203863045004612,
+    "treatment_rate": 0.12299222352212512,
+    "absolute_difference": 0.002605919021663919,
+    "relative_lift": 0.021646307962330844,
+    "z_score": 2.1484056695589,
+    "p_value": 0.031681542789750834,
+    "alpha": 0.05,
+    "ci_low": 0.0002285928486401357,
+    "ci_high": 0.0049832451946877025,
+    "significant": true,
+    "conclusion": "实验组与对照组转化率存在统计显著差异。",
+    "recommendation": "实验组显著优于对照组，可结合收益与实施成本评估上线。"
+  },
+  "artifacts": {
+    "group_summary": "output\\ab_group_summary.csv",
+    "dashboard": "output\\ab_test_dashboard.html"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "ab_test": {
+    "raw_rows": 294478,
+    "invalid_value_rows": 0,
+    "mismatch_rows": 3893,
+    "duplicate_rows_removed": 1,
+    "clean_rows": 290584,
+    "control_rate": 0.1203863045004612,
+    "treatment_rate": 0.12299222352212512,
+    "absolute_difference": 0.002605919021663919,
+    "relative_lift": 0.021646307962330844,
+    "z_score": 2.1484056695589,
+    "p_value": 0.031681542789750834,
+    "alpha": 0.05,
+    "ci_low": 0.0002285928486401357,
+    "ci_high": 0.0049832451946877025,
+    "significant": true,
+    "conclusion": "实验组与对照组转化率存在统计显著差异。",
+    "recommendation": "实验组显著优于对照组，可结合收益与实施成本评估上线。"
+  },
+  "refund_analysis": {
+    "raw_rows": 4339,
+    "invalid_rows": 0,
+    "duplicate_refund_ids": 0,
+    "clean_rows": 4339,
+    "total_refund_amount": 550420.45,
+    "average_refund_amount": 126.85421756165015,
+    "median_refund_amount": 90.0,
+    "amount_min": 80.0,
+    "amount_max": 1120.0,
+    "p95": 240.0,
+    "p99": 350.0,
+    "q1": 82.5,
+    "q3": 165.0,
+    "iqr": 82.5,
+    "iqr_upper_fence": 288.75,
+    "anomaly_count": 93,
+    "anomaly_rate": 0.021433510025351463,
+    "anomaly_amount": 45420.0,
+    "anomaly_amount_share": 0.0825187363587236,
+    "top_reason": "价格/优惠规则看不懂",
+    "top_reason_count_share": 0.45586540677575477,
+    "top_reason_amount_share": 0.4476857464144002,
+    "median_refund_delay_minutes": 4.946196333333333,
+    "product_unique_count": 1
+  },
+  "artifacts": {
+    "ab_test": {
+      "group_summary": "output\\ab_group_summary.csv",
+      "dashboard": "output\\ab_test_dashboard.html"
+    },
+    "refund_analysis": {
+      "reason_summary": "output\\refund_reason_summary.csv",
+      "anomaly_records": "output\\refund_anomaly_records.csv",
+      "dashboard": "output\\refund_anomaly_dashboard.html"
+    }
+  }
+}
